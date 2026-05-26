@@ -11,3 +11,5 @@ passlib[bcrypt]
 redis
 prometheus-client
 httpx
+pytestemail-validator
+email-validator
