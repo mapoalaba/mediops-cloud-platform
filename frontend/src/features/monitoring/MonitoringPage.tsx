@@ -1,10 +1,14 @@
+/**
+ * 모니터링 페이지
+ * Prometheus, Grafana, Backend metrics, Swagger 문서로 이동할 수 있는 링크를 제공한다.
+ */
 export function MonitoringPage() {
   return (
     <div>
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-slate-900">Monitoring</h1>
+        <h1 className="text-2xl font-bold text-slate-900">모니터링</h1>
         <p className="text-sm text-slate-500">
-          Prometheus와 Grafana를 통해 서비스 메트릭을 확인합니다.
+          Prometheus와 Grafana를 통해 API 요청 수, 오류 수, 응답 시간 등 서비스 메트릭을 확인합니다.
         </p>
       </div>
 
@@ -16,7 +20,7 @@ export function MonitoringPage() {
         >
           <h2 className="font-semibold text-slate-900">Prometheus</h2>
           <p className="mt-2 text-sm text-slate-500">
-            Backend /metrics 및 서비스 메트릭 수집 상태를 확인합니다.
+            Backend /metrics 엔드포인트를 수집하고 Alert Rule을 확인합니다.
           </p>
         </a>
 
@@ -27,7 +31,7 @@ export function MonitoringPage() {
         >
           <h2 className="font-semibold text-slate-900">Grafana</h2>
           <p className="mt-2 text-sm text-slate-500">
-            API Latency, Error Rate, Pod 상태를 시각화합니다.
+            API 응답 시간, 오류율, 장애 시뮬레이션 지표를 대시보드로 확인합니다.
           </p>
         </a>
 
@@ -36,9 +40,9 @@ export function MonitoringPage() {
           target="_blank"
           className="rounded-xl bg-white p-5 shadow-sm border border-slate-200 hover:border-blue-400"
         >
-          <h2 className="font-semibold text-slate-900">Backend /metrics</h2>
+          <h2 className="font-semibold text-slate-900">Backend Metrics</h2>
           <p className="mt-2 text-sm text-slate-500">
-            FastAPI Backend에서 노출하는 Prometheus Metric 원본을 확인합니다.
+            FastAPI Backend가 노출하는 Prometheus Metric 원본을 확인합니다.
           </p>
         </a>
 
@@ -47,9 +51,9 @@ export function MonitoringPage() {
           target="_blank"
           className="rounded-xl bg-white p-5 shadow-sm border border-slate-200 hover:border-blue-400"
         >
-          <h2 className="font-semibold text-slate-900">Swagger Docs</h2>
+          <h2 className="font-semibold text-slate-900">API 문서</h2>
           <p className="mt-2 text-sm text-slate-500">
-            Backend API 문서와 테스트 화면을 확인합니다.
+            Swagger 화면에서 Backend API 명세와 테스트를 확인합니다.
           </p>
         </a>
       </div>

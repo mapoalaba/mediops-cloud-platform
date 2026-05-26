@@ -1,5 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { DashboardLayout } from "../components/layout/DashboardLayout";
+import { AuditLogsPage } from "../features/auditLogs/AuditLogsPage";
+import { AppointmentsPage } from "../features/appointments/AppointmentsPage";
 import { LoginPage } from "../features/auth/LoginPage";
 import { DashboardPage } from "../features/dashboard/DashboardPage";
 import { DeploymentsPage } from "../features/deployments/DeploymentsPage";
@@ -18,9 +20,11 @@ export function App() {
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/patients" element={<PatientsPage />} />
+          <Route path="/appointments" element={<AppointmentsPage />} />
           <Route path="/incidents" element={<IncidentsPage />} />
           <Route path="/simulations" element={<SimulationsPage />} />
           <Route path="/security" element={<SecurityPage />} />
+          <Route path="/audit-logs" element={<AuditLogsPage />} />
           <Route path="/monitoring" element={<MonitoringPage />} />
           <Route path="/deployments" element={<DeploymentsPage />} />
         </Route>

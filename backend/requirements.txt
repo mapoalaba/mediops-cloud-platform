@@ -8,8 +8,9 @@ pydantic
 pydantic-settings
 python-jose[cryptography]
 passlib[bcrypt]
+bcrypt==4.0.1
 redis
 prometheus-client
 httpx
-pytestemail-validator
+pytest
 email-validator

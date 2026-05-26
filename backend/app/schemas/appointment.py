@@ -7,6 +7,12 @@ class AppointmentCreate(BaseModel):
     appointment_date: str
 
 
+class AppointmentUpdate(BaseModel):
+    department: str | None = None
+    appointment_date: str | None = None
+    status: str | None = None
+
+
 class AppointmentResponse(BaseModel):
     id: int
     patient_id: int
